@@ -1,0 +1,398 @@
+
+____________________________________________
+
+/* 1. Configuração geral */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f5f9;
+    color: #1e293b;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* 2. Título principal */
+h1 {
+    color: #0f172a;
+    text-align: center;
+    font-size: 32px;
+}
+
+/* 3. Subtítulos */
+h2 {
+    color: #2563eb;
+    border-bottom: 2px solid #dbeafe;
+    padding-bottom: 6px;
+}
+
+/* 4. Parágrafos e listas */
+p, li {
+    font-size: 16px;
+}
+
+/* 5. Foto do portfólio */
+img {
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+    margin: 15px 0;
+}
+
+/* 6. Links */
+a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
+/* 7. Botão */
+button {
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* 8. Ajuste para celular */
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+}
+
+section {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 850px;
+    margin: 24px auto;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #0f172a12;
+    
+}
+header {
+    background-color: #0f172a;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 12px;
+    width:100% ;
+    max-width: 1000px;
+    margin: 0 auto 24px;
+}
+
+header h1 {
+    color: #ffffff;
+}
+
+header p {
+    color: #cbd5e1;
+}
+
+footer {
+    background-color: #0f172a;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 12px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+
+section button {
+    display: inline-block;
+    margin-top: 16px;
+}
+
+
+
+#botaoSobre {
+    background-color: #2563eb;
+    color: rgb(250, 248, 248);
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#botaoSobre:hover {
+    background-color: #1d4ed8;
+}
+
+
+#formContato {
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+#formContato input,
+#formContato textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+#formContato textarea {
+    resize: vertical;
+}
+
+#formContato button {
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#formContato button:hover {
+    background-color: #1d4ed8;
+}
+
+
+#retornoContato {
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+.mensagem-erro {
+    color: #dc2626;
+}
+
+.mensagem-sucesso {
+    color: #16a34a;
+}
+
+.campo-erro {
+    border: 2px solid #dc2626 !important;
+}
+
+.contador-limite {
+    color: #dc2626;
+    font-weight: bold;
+}
+
+/* Modo escuro */
+
+body.modo-escuro {
+    background-color: #0f172a;
+    color: #e2e8f0;
+}
+
+body.modo-escuro section {
+    background-color: #1e293b;
+}
+
+body.modo-escuro h2 {
+    color: #60a5fa;
+    border-bottom-color: #334155;
+}
+
+body.modo-escuro a {
+    color: #93c5fd;
+}
+
+body.modo-escuro input,
+body.modo-escuro textarea {
+    background-color: #334155;
+    color: #ffffff;
+    border-color: #64748b;
+}
+
+/* Menu de navegação */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+/* Rolagem suave da página */
+
+html {
+    scroll-behavior: smooth;
+}
+/* Seção de habilidades */
+
+.lista-habilidades {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.habilidade {
+    background-color: #f1f5f9;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #cbd5e1;
+}
+
+.habilidade h3 {
+    color: #2563eb;
+}
+
+body.modo-escuro .habilidade {
+    background-color: #0f172a;
+    border-color: #334155;
+}
+
+body.modo-escuro .habilidade h3 {
+    color: #60a5fa;
+}
+/* Habilidades em telas menores */
+
+@media (max-width: 600px) {
+    .lista-habilidades {
+        grid-template-columns: 1fr;
+    }
+}
+/* Ícones das habilidades */
+
+.habilidade i {
+    font-size: 50px;
+    display: block;
+    margin-bottom: 12px;
+}
+/* Animação dos cartões */
+
+.habilidade {
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease,
+                border-color 0.3s ease;
+}
+
+.habilidade:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px #2563eb40;
+    border-color: #60a5fa;
+}
+
+/* Seção de projetos */
+
+.lista-projetos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.projeto {
+    background-color: #f1f5f9;
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid #cbd5e1;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.projeto h3 {
+    color: #2563eb;
+}
+
+.projeto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px #2563eb40;
+}
+
+/* Projetos no modo escuro */
+
+body.modo-escuro .projeto {
+    background-color: #0f172a;
+    border-color: #334155;
+}
+
+body.modo-escuro .projeto h3 {
+    color: #60a5fa;
+}
+
+/* Projetos no celular */
+
+@media (max-width: 600px) {
+    .lista-projetos {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Imagens dos projetos */
+
+.projeto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 0 0 16px;
+}
+/* Redes sociais */
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.botao-social {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border: 1px solid #60a5fa;
+    border-radius: 8px;
+    color: #93c5fd;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.botao-social:hover {
+    background-color: #2563eb;
+    color: #ffffff;
+    transform: translateY(-3px);
+    text-decoration: none;
+}
+
+.botao-social i {
+    font-size: 22px;
+}

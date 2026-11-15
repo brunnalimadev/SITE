@@ -1,0 +1,237 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+</head>
+
+<body>
+  
+   <header id="inicio">
+
+    <nav>
+    <a href="#inicio">Início</a>
+    <a href="#sobre">Sobre mim</a>
+    <a href="#objetivos">Objetivos</a>
+    <a href="#habilidades">Habilidades</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#contato">Contato</a>
+</nav>
+
+    <h1>Olá! Meu nome é Bruna!</h1>
+
+    <p>Estou começando minha jornada na programação.</p>
+
+    <button id="botaoTema">
+        🌙 Modo escuro
+    </button>
+<div class="redes-sociais">
+
+    <a href="https://github.com/brunnalimadev"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="botao-social">
+
+        <i class="devicon-github-original"></i>
+        Meu GitHub
+
+    </a>
+
+</div>
+
+</header>
+
+      <section id="sobre">
+    <h2>Sobre mim</h2>
+
+<img src="Imagens/Retrato profissional em escritório aconchegante.png"
+     alt="Minha foto de apresentação"
+     width="200"
+     >  
+      
+<p>
+    Sou formada em Educação Física, com Bacharelado e
+    Licenciatura, e atualmente curso Análise e
+    Desenvolvimento de Sistemas pela UNICESUMAR.
+
+    Estou em transição de carreira para a área de
+    tecnologia, desenvolvendo conhecimentos em HTML,
+    CSS, JavaScript e lógica de programação.
+</p> 
+
+    <button id="botaoSobre">
+        Mostrar sobre mim
+    </button>
+
+<p id="textoSobre" style="display: none;">
+    Minha experiência profissional na Educação Física
+    contribuiu para desenvolver habilidades como
+    disciplina, comunicação e trabalho em equipe.
+
+    Meu objetivo é crescer na área de tecnologia,
+    desenvolver soluções digitais e aprimorar meus
+    conhecimentos em programação.
+</p>
+
+     <p>
+        Estou estudando desenvolvimento web por meio da 
+  <a href="https://developer.mozilla.org/pt-BR/docs/Learn_web_development"
+       target="_blank">
+       documentação da MDN
+       </a>
+</p>
+ </section> 
+
+
+ <section id="objetivos"></section>
+
+ 
+ <p>Sou estudante de Análise e Desenvolvimento de Sistemas, faço pela UNICESUMAR.</p>
+
+    <h2>Meus objetivos</h2>
+
+    <ul>
+        <li> HTML: aprendendo a estruturar paginas</li>
+        <li>CSS: proximo passo dos meus estudos </li>
+        <li>JavaScript: quero aprender a criar interações</li>
+    </ul>
+</section>
+
+<section id="habilidades">
+
+    <h2>Minhas habilidades</h2>
+
+    <div class="lista-habilidades">
+
+        <div class="habilidade">
+            <i class="devicon-html5-plain colored"></i>
+    <h3>HTML5</h3>
+    <p>Estrutura de páginas</p>
+            
+        </div>
+
+        <div class="habilidade">
+            <i class="devicon-css3-plain colored"></i>
+            <h3>CSS3</h3>
+            <p>Estilização de páginas</p>
+        </div>
+
+        <div class="habilidade">
+            <i class="devicon-javascript-plain colored"></i>
+            <h3>JavaScript</h3>
+            <p>Interatividade</p>
+        </div>
+
+        <div class="habilidade">
+            <i class="devicon-git-plain colored"></i>
+            <h3>Git e GitHub</h3>
+            <p>Versionamento de código</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="projetos">
+
+    <h2>Meus projetos</h2>
+
+    <div class="lista-projetos">
+
+        <div class="projeto">
+
+        <img src="Imagens/Captura de tela 2026-11-14 232928.png"
+         alt="Captura do meu portfólio pessoal">
+
+    <h3>Portfólio pessoal</h3>
+        
+            <p>
+                Site desenvolvido durante meus estudos
+                de HTML, CSS e JavaScript.
+            </p>
+
+            <p>HTML | CSS | JavaScript</p>
+        </div>
+
+        <div class="projeto">
+            <h3>Personal Trainer</h3>
+
+            <p>
+                Aplicativo voltado para profissionais
+                de Educação Física.
+            </p>
+
+            <p>Em desenvolvimento</p>
+        </div>
+
+    </div>
+
+</section>
+   
+<section id="contato">
+    <h2>Contato</h2>
+ <!-- seus links ou informações de contato -->
+  
+ <p>
+       Entre em contato:
+    <a href="mailto:bruninha1896@gmail.com"> Enviar </a>
+</p>
+
+ <button id="botaoMensagem">
+  
+        Clique aqui
+</button> 
+
+<p id="mensagem"></p>
+<h3> Envie uma mensagem </h3>
+
+<form id="formContato">
+    <label for="nomeContato">Seu nome: </label>
+    <br>
+    <input
+        type="text"
+        id="nomeContato"
+        placeholder="Digite seu nome"
+    >
+
+<br><br>
+
+<label for="mensagemContato"> Sua mensagem:</label>
+<br>
+
+<textarea
+    id="mensagemContato"
+    placeholder="Digite sua mensagem"
+    rows="4"
+    maxlength="200"
+
+></textarea>
+    </textarea>
+<p id="contadorCaracteres">0 caracteres digitados</p>
+
+ <br><br>
+
+ <button type="submit"> Enviar mensagem</button> 
+
+</form>
+<p id="retornoContato"></p>
+
+</section>
+
+<script src="script.js"></script>
+
+<footer>
+    <p>© 2026 Bruna | Meu Portfólio</p>
+    <p>Desenvolvido durante meus estudos de programação.</p>
+</footer>
+
+</body>
+</html>
