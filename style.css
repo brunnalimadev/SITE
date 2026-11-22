@@ -423,3 +423,12 @@ body.modo-escuro .projeto h3 {
 .botao-projeto i {
     font-size: 20px;
 }
+
+/* Organização dos botões dos projetos */
+
+.botoes-projeto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+}
