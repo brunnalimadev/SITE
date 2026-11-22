@@ -60,8 +60,24 @@ formContato.addEventListener("submit", function(event) {
         mensagemContato.classList.add("campo-erro");
 
     } else {
-        retornoContato.textContent = "Obrigada, " + nomeContato.value + "! Formulário preenchido com sucesso!";
-        retornoContato.className = "mensagem-sucesso";
+        const assunto = encodeURIComponent("Contato pelo portfólio");
+
+const corpo = encodeURIComponent(
+    "Nome: " + nomeContato.value + "\n\n" +
+    "Mensagem: " + mensagemContato.value
+);
+
+const email = "bruninha1896@gmail.com";
+
+window.location.href =
+    "mailto:" + email +
+    "?subject=" + assunto +
+    "&body=" + corpo;
+
+retornoContato.textContent =
+    "Seu aplicativo de e-mail será aberto para enviar a mensagem.";
+
+retornoContato.className = "mensagem-sucesso";
 
         nomeContato.value = "";
         mensagemContato.value = "";
